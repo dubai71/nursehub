@@ -1,13 +1,14 @@
-export default function CommunityLayout({
+export default async function CommunityLayout({
   children,
   params,
 }: {
   children: React.ReactNode;
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }) {
+  const { id } = await params;
   const community = {
-    id: params.id,
-    name: params.id === 'ai-automation-society' ? 'AI Automation Society' : 'Comunidade',
+    id,
+    name: id === 'ai-automation-society' ? 'AI Automation Society' : 'Comunidade',
     description: 'Descrição da comunidade',
     members: 404100,
     online: 1600,
