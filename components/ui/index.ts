@@ -1,7 +1,9 @@
-export { Input } from './input';
-export { Textarea } from './textarea';
-export { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from './select';
-export { Separator } from './separator';
-export { ScrollArea, ScrollBar } from './scroll-area';
-export { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './tooltip';
-export { CommandPalette } from './command';
+// Do NOT use barrel exports here — TypeScript build fails with re-exports.
+// Import components directly from their files instead.
+//
+// Example:
+//   import { Input } from '@/components/ui/input'
+//   import { Button } from '@/components/ui/button'
+//
+// This avoids Next.js 15 build issues with type-level re-exports.
+export {}
