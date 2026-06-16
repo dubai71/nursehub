@@ -37,7 +37,7 @@ export default function CommunityLayout({
               </div>
             </div>
             <button className="px-6 py-2.5 rounded-xl bg-[#10B981] text-white font-semibold hover:bg-emerald-600 transition-colors">
-              Entrar na comunidade
+              Entrar
             </button>
           </div>
         </div>
