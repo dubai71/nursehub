@@ -37,9 +37,9 @@ export default async function CommunityLayout({
                 <p className="text-[#888888] text-sm">{community.description}</p>
               </div>
             </div>
-            <button className="px-6 py-2.5 rounded-xl bg-[#10B981] text-white font-semibold hover:bg-emerald-600 transition-colors">
+            <a href="/register" className="inline-flex px-6 py-2.5 rounded-xl bg-[#10B981] text-white font-semibold hover:bg-emerald-600 transition-colors">
               Entrar
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -49,12 +49,12 @@ export default async function CommunityLayout({
         <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
           <nav className="flex gap-6">
             {[
-              { href: `/community/${params.id}`, label: 'Comunidade' },
-              { href: `/community/${params.id}/classroom`, label: 'Classroom' },
-              { href: `/community/${params.id}/calendar`, label: 'Calendário' },
-              { href: `/community/${params.id}/members`, label: 'Membros' },
-              { href: `/community/${params.id}/leaderboards`, label: 'Leaderboard' },
-              { href: `/community/${params.id}/about`, label: 'Sobre' },
+              { href: `/community/${id}`, label: 'Comunidade' },
+              { href: `/community/${id}/classroom`, label: 'Classroom' },
+              { href: `/community/${id}/calendar`, label: 'Calendário' },
+              { href: `/community/${id}/members`, label: 'Membros' },
+              { href: `/community/${id}/leaderboards`, label: 'Leaderboard' },
+              { href: `/community/${id}/about`, label: 'Sobre' },
             ].map((item) => (
               <a
                 key={item.href}
